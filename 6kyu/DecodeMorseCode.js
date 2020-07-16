@@ -1,3 +1,5 @@
+// https://www.codewars.com/kata/54b724efac3d5402db00065e
+
 // Part of Series 1/3
 // This kata is part of a series on the Morse code. After you solve this kata, you may move to the next one.
 

@@ -1,3 +1,4 @@
+// https://www.codewars.com/kata/52449b062fb80683ec000024
 
 function generateHashtag (str) {
     return (str.match(/\w/g) && str.camelCase().length < 140) ?  "#" + str.camelCase() : false

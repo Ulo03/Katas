@@ -1,3 +1,5 @@
+// https://www.codewars.com/kata/51fda2d95d6efda45e00004e
+
 // Write a class called User that is used to calculate the amount that a user will progress through a ranking system similar to the one Codewars uses.
 // Business Rules:
 // A user starts at rank -8 and can progress all the way to 8.
