@@ -19,13 +19,28 @@
 //There are, however, tests that include punctuation. Don't filter out punctuation as they are a part of the string.
 
 function encodeRailFenceCipher(string, numRails) {
-    // code
+    if (string == "" || numRails < 2) return "";
+    var it = 0;
+    var mode = "in";
+    var rails = [];
+    for (let i = 0; i < numRails; i++) {  rails.push([]); }
+    string.split("").map((e, idx) => {
+        rails[it].push(e);
+        if (it > numRails-2) { mode = "de" } else if (it == 0) { mode = "in" };
+        if (mode == "in" && it < numRails-1) { it++ } else if (it > 0 && mode == "de") { it-- };
+    });
+    rails = rails.map(e => e.join(""));
+    return rails.join("");
 }
   
-  function decodeRailFenceCipher(string, numRails) {
-    // code
+function decodeRailFenceCipher(string, numRails) {
+    if (string == "" || numRails == 0) return "";
+    var res = "";
+    
+    return res;
 }
 
 console.log(encodeRailFenceCipher("WEAREDISCOVEREDFLEEATONCE", 3), "WECRLTEERDSOEEFEAOCAIVDEN");
 console.log(decodeRailFenceCipher("WECRLTEERDSOEEFEAOCAIVDEN", 3), "WEAREDISCOVEREDFLEEATONCE");
 console.log(encodeRailFenceCipher("Hello, World!", 3), "Hoo!el,Wrdl l");
+console.log(decodeRailFenceCipher("Hoo!el,Wrdl l", 3), "Hello, World!");
