@@ -44,3 +44,5 @@ console.log(encodeRailFenceCipher("WEAREDISCOVEREDFLEEATONCE", 3), "WECRLTEERDSO
 console.log(decodeRailFenceCipher("WECRLTEERDSOEEFEAOCAIVDEN", 3), "WEAREDISCOVEREDFLEEATONCE");
 console.log(encodeRailFenceCipher("Hello, World!", 3), "Hoo!el,Wrdl l");
 console.log(decodeRailFenceCipher("Hoo!el,Wrdl l", 3), "Hello, World!");
+console.log(encodeRailFenceCipher("Hello, World!", 4), "H !e,Wdloollr");
+console.log(decodeRailFenceCipher("H !e,Wdloollr", 4), "Hello, World!");
