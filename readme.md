@@ -4,27 +4,19 @@
 
 - X
 
-
-
 ## [2kyu](https://github.com/Ulo03/Katas/tree/master/2kyu)
 
 - [MathematicalExpression \[WIP\]](https://github.com/Ulo03/Katas/blob/master/2kyu/MathematicalExpression%20%5BWIP%5D.js)
 
-
-
 ## [3kyu](https://github.com/Ulo03/Katas/tree/master/3kyu)
 
 - [RailFenceCipher](https://github.com/Ulo03/Katas/blob/master/3kyu/RailFenceCipher.js)
-
-
 
 ## [4kyu](https://github.com/Ulo03/Katas/tree/master/4kyu)
 
 - [CodeWarsRS](https://github.com/Ulo03/Katas/blob/master/4kyu/CodewarsRS.js)
 - [RomanNumeralsHelper](https://github.com/Ulo03/Katas/blob/master/4kyu/RomanNumeralsHelper.js)
 - [SameStructureAs](https://github.com/Ulo03/Katas/blob/master/4kyu/SameStructureAs.js)
-
-
 
 ## [5kyu](https://github.com/Ulo03/Katas/tree/master/5kyu)
 
@@ -36,8 +28,6 @@
 - [SumOfPairs](https://github.com/Ulo03/Katas/blob/master/5kyu/SumOfPairs.js)
 - [TheHashtagGenerator](https://github.com/Ulo03/Katas/blob/master/5kyu/TheHashtagGenerator.js)
 - [simpleAssembler](https://github.com/Ulo03/Katas/blob/master/5kyu/simpleAssembler.js)
-
-
 
 ## [6kyu](https://github.com/Ulo03/Katas/tree/master/6kyu)
 
@@ -51,6 +41,7 @@
 - [PersistentBugger](https://github.com/Ulo03/Katas/blob/master/6kyu/PersistentBugger.js)
 - [PlusOneArray](https://github.com/Ulo03/Katas/blob/master/6kyu/PlusOneArray.js)
 - [PrimorialOfANumber](https://github.com/Ulo03/Katas/blob/master/6kyu/PrimorialOfANumber.js)
+- [RemoveElementOfArray](https://github.com/Ulo03/Katas/blob/master/6kyu/RemoveElementOfArray.js)
 - [ReplaceWithAlphabetPosition](https://github.com/Ulo03/Katas/blob/master/6kyu/ReplaceWithAlphabetPosition.js)
 - [SumTwoArrays](https://github.com/Ulo03/Katas/blob/master/6kyu/SumTwoArrays.js)
 - [UniqueInOrder](https://github.com/Ulo03/Katas/blob/master/6kyu/UniqueInOrder.js)
@@ -58,8 +49,6 @@
 - [VasyaClerk](https://github.com/Ulo03/Katas/blob/master/6kyu/VasyaClerk.js)
 - [WhichAreIn](https://github.com/Ulo03/Katas/blob/master/6kyu/WhichAreIn.js)
 - [removeParentheses](https://github.com/Ulo03/Katas/blob/master/6kyu/removeParentheses.js)
-
-
 
 ## [7kyu](https://github.com/Ulo03/Katas/tree/master/7kyu)
 
@@ -78,10 +67,6 @@
 - [ShortestWord](https://github.com/Ulo03/Katas/blob/master/7kyu/ShortestWord.js)
 - [SimpleStringMatching](https://github.com/Ulo03/Katas/blob/master/7kyu/SimpleStringMatching.js)
 
-
-
 ## [8kyu](https://github.com/Ulo03/Katas/tree/master/8kyu)
 
 - [KeepHydrated](https://github.com/Ulo03/Katas/blob/master/8kyu/KeepHydrated.js)
-
-
