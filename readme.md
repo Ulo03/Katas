@@ -35,6 +35,7 @@
 - [CountCharactersInString](https://github.com/Ulo03/Katas/blob/master/6kyu/CountCharactersInString.js)
 - [DataReverse](https://github.com/Ulo03/Katas/blob/master/6kyu/DataReverse.js)
 - [DecodeMorseCode](https://github.com/Ulo03/Katas/blob/master/6kyu/DecodeMorseCode.js)
+- [EsolangInterpreter1](https://github.com/Ulo03/Katas/blob/master/6kyu/EsolangInterpreter1.js)
 - [FormatStringOfNames](https://github.com/Ulo03/Katas/blob/master/6kyu/FormatStringOfNames.js)
 - [HighestScoringWord](https://github.com/Ulo03/Katas/blob/master/6kyu/HighestScoringWord.js)
 - [Meeting](https://github.com/Ulo03/Katas/blob/master/6kyu/Meeting.js)
