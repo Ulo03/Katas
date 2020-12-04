@@ -22,6 +22,7 @@
 
 - [AWNuclearStrike \[WIP\]](https://github.com/Ulo03/Katas/blob/master/5kyu/AWNuclearStrike%20%5BWIP%5D.js)
 - [BubblyPL](https://github.com/Ulo03/Katas/blob/master/5kyu/BubblyPL.js)
+- [EsolangInterpreter2 \[WIP\]](https://github.com/Ulo03/Katas/blob/master/5kyu/EsolangInterpreter2%20%5BWIP%5D.js)
 - [MathIssues](https://github.com/Ulo03/Katas/blob/master/5kyu/MathIssues.js)
 - [PaginationHelper](https://github.com/Ulo03/Katas/blob/master/5kyu/PaginationHelper.js)
 - [SimplePigLatin](https://github.com/Ulo03/Katas/blob/master/5kyu/SimplePigLatin.js)
