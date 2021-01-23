@@ -1,22 +1,49 @@
 # [Katas](https://www.codewars.com/kata/)
 
+## Jump to:
+
+- [1kyu](#1kyu)
+- [2kyu](#2kyu)
+- [3kyu](#3kyu)
+- [4kyu](#4kyu)
+- [5kyu](#5kyu)
+- [6kyu](#6kyu)
+- [7kyu](#7kyu)
+- [8kyu](#8kyu)
+
+<br>
+
+---
+
+<br>
+
+<span id="1kyu"></span>
+
 ## [1kyu](https://github.com/Ulo03/Katas/tree/master/1kyu)
 
 - X
+
+<span id="2kyu"></span>
 
 ## [2kyu](https://github.com/Ulo03/Katas/tree/master/2kyu)
 
 - [MathematicalExpression \[WIP\]](https://github.com/Ulo03/Katas/blob/master/2kyu/MathematicalExpression%20%5BWIP%5D.js)
 
+<span id="3kyu"></span>
+
 ## [3kyu](https://github.com/Ulo03/Katas/tree/master/3kyu)
 
 - [RailFenceCipher](https://github.com/Ulo03/Katas/blob/master/3kyu/RailFenceCipher.js)
+
+<span id="4kyu"></span>
 
 ## [4kyu](https://github.com/Ulo03/Katas/tree/master/4kyu)
 
 - [CodeWarsRS](https://github.com/Ulo03/Katas/blob/master/4kyu/CodewarsRS.js)
 - [RomanNumeralsHelper](https://github.com/Ulo03/Katas/blob/master/4kyu/RomanNumeralsHelper.js)
 - [SameStructureAs](https://github.com/Ulo03/Katas/blob/master/4kyu/SameStructureAs.js)
+
+<span id="5kyu"></span>
 
 ## [5kyu](https://github.com/Ulo03/Katas/tree/master/5kyu)
 
@@ -29,6 +56,8 @@
 - [SumOfPairs](https://github.com/Ulo03/Katas/blob/master/5kyu/SumOfPairs.js)
 - [TheHashtagGenerator](https://github.com/Ulo03/Katas/blob/master/5kyu/TheHashtagGenerator.js)
 - [simpleAssembler](https://github.com/Ulo03/Katas/blob/master/5kyu/simpleAssembler.js)
+
+<span id="6kyu"></span>
 
 ## [6kyu](https://github.com/Ulo03/Katas/tree/master/6kyu)
 
@@ -52,6 +81,8 @@
 - [WhichAreIn](https://github.com/Ulo03/Katas/blob/master/6kyu/WhichAreIn.js)
 - [removeParentheses](https://github.com/Ulo03/Katas/blob/master/6kyu/removeParentheses.js)
 
+<span id="7kyu"></span>
+
 ## [7kyu](https://github.com/Ulo03/Katas/tree/master/7kyu)
 
 - [ArraySeries1](https://github.com/Ulo03/Katas/blob/master/7kyu/ArraySeries1.js)
@@ -68,6 +99,8 @@
 - [SNS7](https://github.com/Ulo03/Katas/blob/master/7kyu/SNS7.js)
 - [ShortestWord](https://github.com/Ulo03/Katas/blob/master/7kyu/ShortestWord.js)
 - [SimpleStringMatching](https://github.com/Ulo03/Katas/blob/master/7kyu/SimpleStringMatching.js)
+
+<span id="8kyu"></span>
 
 ## [8kyu](https://github.com/Ulo03/Katas/tree/master/8kyu)
 
