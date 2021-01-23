@@ -73,13 +73,14 @@
 - [PlusOneArray](https://github.com/Ulo03/Katas/blob/master/6kyu/PlusOneArray.js)
 - [PrimorialOfANumber](https://github.com/Ulo03/Katas/blob/master/6kyu/PrimorialOfANumber.js)
 - [RemoveElementOfArray](https://github.com/Ulo03/Katas/blob/master/6kyu/RemoveElementOfArray.js)
+- [removeParentheses](https://github.com/Ulo03/Katas/blob/master/6kyu/removeParentheses.js)
 - [ReplaceWithAlphabetPosition](https://github.com/Ulo03/Katas/blob/master/6kyu/ReplaceWithAlphabetPosition.js)
 - [SumTwoArrays](https://github.com/Ulo03/Katas/blob/master/6kyu/SumTwoArrays.js)
 - [UniqueInOrder](https://github.com/Ulo03/Katas/blob/master/6kyu/UniqueInOrder.js)
 - [ValidBraces](https://github.com/Ulo03/Katas/blob/master/6kyu/ValidBraces.js)
 - [VasyaClerk](https://github.com/Ulo03/Katas/blob/master/6kyu/VasyaClerk.js)
 - [WhichAreIn](https://github.com/Ulo03/Katas/blob/master/6kyu/WhichAreIn.js)
-- [removeParentheses](https://github.com/Ulo03/Katas/blob/master/6kyu/removeParentheses.js)
+- [YourOrderPlease](https://github.com/Ulo03/Katas/blob/master/6kyu/YourOrderPlease.js)
 
 <span id="7kyu"></span>
 
@@ -104,4 +105,6 @@
 
 ## [8kyu](https://github.com/Ulo03/Katas/tree/master/8kyu)
 
+- [GravityFlip](https://github.com/Ulo03/Katas/blob/master/8kyu/GravityFlip.js)
 - [KeepHydrated](https://github.com/Ulo03/Katas/blob/master/8kyu/KeepHydrated.js)
+- [ReturnNegative](https://github.com/Ulo03/Katas/blob/master/8kyu/ReturnNegative.js)
