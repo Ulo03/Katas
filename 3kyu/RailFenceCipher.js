@@ -1,4 +1,5 @@
 // https://www.codewars.com/kata/58c5577d61aefcf3ff000081
+import { assertEquals } from '../testing.js';
 
 // Create two functions to encode and then decode a string using the Rail Fence Cipher.
 //This cipher is used to encode a string by placing each character successively in a diagonal along a set of "rails".
@@ -19,65 +20,80 @@
 //There are, however, tests that include punctuation. Don't filter out punctuation as they are a part of the string.
 
 function encodeRailFenceCipher(string, numRails) {
-  if (string == "" || numRails < 2) return "";
+  if (string == '' || numRails < 2) return '';
   var it = 0;
-  var mode = "in";
+  var mode = 'in';
   var rails = [];
   for (let i = 0; i < numRails; i++) {
     rails.push([]);
   }
-  string.split("").map((e, idx) => {
+  string.split('').map((e, idx) => {
     rails[it].push(e);
     if (it > numRails - 2) {
-      mode = "de";
+      mode = 'de';
     } else if (it == 0) {
-      mode = "in";
+      mode = 'in';
     }
-    if (mode == "in" && it < numRails - 1) {
+    if (mode == 'in' && it < numRails - 1) {
       it++;
-    } else if (it > 0 && mode == "de") {
+    } else if (it > 0 && mode == 'de') {
       it--;
     }
   });
-  rails = rails.map((e) => e.join(""));
-  return rails.join("");
+  rails = rails.map((e) => e.join(''));
+  return rails.join('');
 }
 
 function decodeRailFenceCipher(string, numRails) {
-  if (string == "" || numRails == 0) return "";
+  if (string == '' || numRails == 0) return '';
   let rails = [];
   for (let i = 0; i < numRails; i++) {
     rails.push([]);
   }
   let rail = 0;
   let change = 1;
-  string.split("").forEach(char => {
-      rails[rail].push(char);
-      rail += change;
-      if (rail === numRails - 1 || rail === 0) { change = -change }
-  })
+  string.split('').forEach((char) => {
+    rails[rail].push(char);
+    rail += change;
+    if (rail === numRails - 1 || rail === 0) {
+      change = -change;
+    }
+  });
   const rFence = [];
-  for (let i = 0; i < numRails; i++) rFence.push([])
+  for (let i = 0; i < numRails; i++) rFence.push([]);
   i = 0;
-  let s = string.split("");
+  let s = string.split('');
   for (res of rails) {
-      for (let j = 0; j < res.length; j++) rFence[i].push(s.shift());
-      i++;
+    for (let j = 0; j < res.length; j++) rFence[i].push(s.shift());
+    i++;
   }
   rail = 0;
   change = 1;
-  var res = "";
+  var res = '';
   for (var i = 0; i < string.length; i++) {
-      res += rFence[rail].shift();
-      rail += change;
-      if (rail == numRails - 1 || rail == 0) { change = -change }
+    res += rFence[rail].shift();
+    rail += change;
+    if (rail == numRails - 1 || rail == 0) {
+      change = -change;
+    }
   }
   return res;
 }
 
-encodeRailFenceCipher("WEAREDISCOVEREDFLEEATONCE", 3); //?.$=="WECRLTEERDSOEEFEAOCAIVDEN"
-decodeRailFenceCipher("WECRLTEERDSOEEFEAOCAIVDEN", 3); //?.$=="WEAREDISCOVEREDFLEEATONCE"
-encodeRailFenceCipher("Hello, World!", 3); //?.$=="Hoo!el,Wrdl l"
-decodeRailFenceCipher("Hoo!el,Wrdl l", 3); //?.$=="Hello, World!"
-encodeRailFenceCipher("Hello, World!", 4); //?.$=="H !e,Wdloollr"
-decodeRailFenceCipher("H !e,Wdloollr", 4); //?.$=="Hello, World!"
+Deno.test('encodeRailFenceCipher', () => {
+  assertEquals(
+    encodeRailFenceCipher('WEAREDISCOVEREDFLEEATONCE', 3),
+    'WECRLTEERDSOEEFEAOCAIVDEN'
+  );
+  assertEquals(encodeRailFenceCipher('Hello, World!', 3), 'Hoo!el,Wrdl l');
+  assertEquals(encodeRailFenceCipher('Hello, World!', 4), 'H !e,Wdloollr');
+});
+
+Deno.test('decodeRailFenceCipher', () => {
+  assertEquals(
+    decodeRailFenceCipher('WECRLTEERDSOEEFEAOCAIVDEN', 3),
+    'WEAREDISCOVEREDFLEEATONCE'
+  );
+  assertEquals(decodeRailFenceCipher('Hoo!el,Wrdl l', 3), 'Hello, World!');
+  assertEquals(decodeRailFenceCipher('H !e,Wdloollr', 4), 'Hello, World!');
+});
