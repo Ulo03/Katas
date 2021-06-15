@@ -1,7 +1,13 @@
-import { assertEquals } from "../testing.js";
+import { assertEquals } from '../testing.js';
 
-function toPostfix (infix) {
-  let out = "", ops = [], inp = infix.split("");
+const Calculator = function() {
+  this.evaluate = string => {
+    let rpn = this.toPostfix(string);
+    if (rpn.match(/\d*/)) return +rpn;
+    // WORK WITH RPN
+  }
+  this.toPostfix = infix => {
+    let out = "", ops = [], inp = infix.split("");
   let opp = {'+': 1, '-': 1, '*': 2, '/': 2, '^': 3, '(': 4, ')': 4};
   while (inp.length > 0) {
     let tk = inp.shift();
@@ -30,7 +36,8 @@ function toPostfix (infix) {
     out += ops.pop();
   }
   return out;
-}
+  }
+};
 
 function getAssoc(op) {
   if (op === "^") {
@@ -40,14 +47,10 @@ function getAssoc(op) {
   }
 }
 
-toPostfix("2+7*5");             //?
-toPostfix("1^2^3");             //?
-toPostfix("3*3/(7+1)");         //?
-toPostfix("5+(6-2)*9+3^(7-1)")  //?
-
 Deno.test('TestCases 1', () => {
-  assertEquals(toPostfix("2+7*5"), "275*+");
-  assertEquals(toPostfix("1^2^3"), "123^^");
-  assertEquals(toPostfix("3*3/(7+1)"), "33*71+/");
-  assertEquals(toPostfix("5+(6-2)*9+3^(7-1)"), "562-9*+371-^+");
+  var calculate = new Calculator()
+  assertEquals(calculate.evaluate('127'), 127);
+  assertEquals(calculate.evaluate('2 + 3'), 5);
+  assertEquals(calculate.evaluate('2 - 3 - 4'), -5);
+  assertEquals(calculate.evaluate('10 * 5 / 2'), 25);
 });
