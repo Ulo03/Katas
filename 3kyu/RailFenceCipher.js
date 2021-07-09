@@ -1,5 +1,4 @@
 // https://www.codewars.com/kata/58c5577d61aefcf3ff000081
-import { assertEquals } from '../testing.js';
 
 // Create two functions to encode and then decode a string using the Rail Fence Cipher.
 //This cipher is used to encode a string by placing each character successively in a diagonal along a set of "rails".
@@ -80,20 +79,4 @@ function decodeRailFenceCipher(string, numRails) {
   return res;
 }
 
-Deno.test('encodeRailFenceCipher', () => {
-  assertEquals(
-    encodeRailFenceCipher('WEAREDISCOVEREDFLEEATONCE', 3),
-    'WECRLTEERDSOEEFEAOCAIVDEN'
-  );
-  assertEquals(encodeRailFenceCipher('Hello, World!', 3), 'Hoo!el,Wrdl l');
-  assertEquals(encodeRailFenceCipher('Hello, World!', 4), 'H !e,Wdloollr');
-});
-
-Deno.test('decodeRailFenceCipher', () => {
-  assertEquals(
-    decodeRailFenceCipher('WECRLTEERDSOEEFEAOCAIVDEN', 3),
-    'WEAREDISCOVEREDFLEEATONCE'
-  );
-  assertEquals(decodeRailFenceCipher('Hoo!el,Wrdl l', 3), 'Hello, World!');
-  assertEquals(decodeRailFenceCipher('H !e,Wdloollr', 4), 'Hello, World!');
-});
+module.exports = { decodeRailFenceCipher, encodeRailFenceCipher };

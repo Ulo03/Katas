@@ -1,5 +1,4 @@
 // https://www.codewars.com/kata/51b66044bce5799a7f000003
-import { assertEquals } from '../testing.js';
 
 const RM = new RomanNumerals();
 function RomanNumerals() {
@@ -78,25 +77,4 @@ function RomanNumerals() {
   }
 }
 
-Deno.test('toRoman', () => {
-  assertEquals(RM.toRoman(1000), 'M');
-  assertEquals(RM.toRoman(999), 'CMXCIX');
-  assertEquals(RM.toRoman(4), 'IV');
-  assertEquals(RM.toRoman(1), 'I');
-  assertEquals(RM.toRoman(1991), 'MCMXCI');
-  assertEquals(RM.toRoman(2006), 'MMVI');
-  assertEquals(RM.toRoman(2020), 'MMXX');
-
-  assertEquals(RM.toRoman(-100), '');
-});
-
-Deno.test('fromRoman', () => {
-  assertEquals(RM.fromRoman('XXI'), 21);
-  assertEquals(RM.fromRoman('I'), 1);
-  assertEquals(RM.fromRoman('III'), 3);
-  assertEquals(RM.fromRoman('IV'), 4);
-  assertEquals(RM.fromRoman('MMVII'), 2007);
-  assertEquals(RM.fromRoman('MDCLXIX'), 1669);
-
-  assertEquals(RM.fromRoman('ABCDEFG'), NaN);
-});
+module.exports.RomanNumerals = RomanNumerals;

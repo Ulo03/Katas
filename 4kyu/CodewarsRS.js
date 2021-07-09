@@ -1,5 +1,4 @@
 // https://www.codewars.com/kata/51fda2d95d6efda45e00004e
-import { assertEquals } from '../testing.js';
 
 const accvals = [-8, -7, -6, -5, -4, -3, -2, -1, 1, 2, 3, 4, 5, 6, 7, 8];
 class User {
@@ -32,13 +31,4 @@ class User {
   }
 }
 
-var user = new User();
-Deno.test('CodewarsRS', () => {
-  assertEquals(user.rank, -8);
-  assertEquals(user.progress, 0);
-  user.incProgress(-7);
-  assertEquals(user.progress, 10);
-  user.incProgress(-5);
-  assertEquals(user.progress, 0);
-  assertEquals(user.rank, -7);
-});
+module.exports.User = User;

@@ -1,8 +1,6 @@
-import { assertEquals } from '../testing.js';
-
 const Calculator = function() {
   this.evaluate = string => {
-    let rpn = this.toPostfix(string);
+    let rpn = this.toPostfix(string.replace(/\s/g, ""));
     if (rpn.match(/\d*/)) return +rpn;
     // WORK WITH RPN
   }
@@ -47,10 +45,4 @@ function getAssoc(op) {
   }
 }
 
-Deno.test('TestCases 1', () => {
-  var calculate = new Calculator()
-  assertEquals(calculate.evaluate('127'), 127);
-  assertEquals(calculate.evaluate('2 + 3'), 5);
-  assertEquals(calculate.evaluate('2 - 3 - 4'), -5);
-  assertEquals(calculate.evaluate('10 * 5 / 2'), 25);
-});
+module.exports.Calculator = Calculator;
