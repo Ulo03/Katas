@@ -20,11 +20,11 @@ function toPostfix (infix) {
       }
       ops.pop();
     } else {
-      console.log(`Token '${tk}' invalid!`);
+      throw new Error("INVALID TOKEN");
     }
   }
   while (ops.length > 0) {
-    if (ops[ops.length-1] === "(") return "ERR: MMP";
+    if (ops[ops.length-1] === "(") throw new Error("MMP");
     out += ops.pop();
   }
   return out;

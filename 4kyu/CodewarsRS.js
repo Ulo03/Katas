@@ -19,13 +19,14 @@ class User {
     } else if (accvals.includes(x) && dif < -1) {
       this.progress += 1;
     } else {
-      throw 'Error';
+      throw new Error('ERROR');
     }
     while (this.progress >= 100) {
       this.progress -= 100;
       this.rank + 1 == 0 ? (this.rank += 2) : (this.rank += 1);
     }
-    if (this.rank == 8) {
+    if (this.rank >= 8) {
+      this.rank = 8;
       this.progress = 0;
     }
   }

@@ -44,7 +44,7 @@ function encodeRailFenceCipher(string, numRails) {
 }
 
 function decodeRailFenceCipher(string, numRails) {
-  if (string == '' || numRails == 0) return '';
+  if (string == '' || numRails < 2) return '';
   let rails = [];
   for (let i = 0; i < numRails; i++) {
     rails.push([]);
