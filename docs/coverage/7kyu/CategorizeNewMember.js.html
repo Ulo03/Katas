@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for 4kyu/CodewarsRS.js</title>
+    <title>Code coverage report for 7kyu/CategorizeNewMember.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">4kyu</a> CodewarsRS.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">7kyu</a> CategorizeNewMember.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>35/35</span>
+                <span class='fraction'>31/31</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>20/20</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>35/35</span>
+                <span class='fraction'>31/31</span>
             </div>
         
             
@@ -87,11 +87,7 @@
 <a name='L28'></a><a href='#L28'>28</a>
 <a name='L29'></a><a href='#L29'>29</a>
 <a name='L30'></a><a href='#L30'>30</a>
-<a name='L31'></a><a href='#L31'>31</a>
-<a name='L32'></a><a href='#L32'>32</a>
-<a name='L33'></a><a href='#L33'>33</a>
-<a name='L34'></a><a href='#L34'>34</a>
-<a name='L35'></a><a href='#L35'>35</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L31'></a><a href='#L31'>31</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -101,72 +97,64 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">19x</span>
-<span class="cline-any cline-yes">19x</span>
-<span class="cline-any cline-yes">19x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">// https://www.codewars.com/kata/51fda2d95d6efda45e00004e
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">// https://www.codewars.com/kata/5502c9e7b3216ec63c0001aa
 &nbsp;
-const accvals = [-8, -7, -6, -5, -4, -3, -2, -1, 1, 2, 3, 4, 5, 6, 7, 8];
-class User {
-  constructor() {
-    this.rank = -8;
-    this.progress = 0;
-  }
+// The Western Suburbs Croquet Club has two categories of membership, Senior and Open. 
+//They would like your help with an application form that will tell prospective members which category they will be placed.
 &nbsp;
-  incProgress(x) {
-    var dif =
-      this.rank &lt; 0 &amp;&amp; x &gt; 0 ? (this.rank - x + 1) * -1 : (this.rank - x) * -1;
-    if (accvals.includes(x) &amp;&amp; dif &gt; 0) {
-      this.progress += 10 * dif * dif;
-    } else if (accvals.includes(x) &amp;&amp; dif == 0) {
-      this.progress += 3;
-    } else if (accvals.includes(x) &amp;&amp; dif == -1) {
-      this.progress += 1;
-    } else if (accvals.includes(x) &amp;&amp; dif &lt; -1) {
-      this.progress += 1;
-    } else {
-      throw new Error('ERROR');
+// To be a senior, a member must be at least 55 years old and have a handicap greater than 7. 
+//In this croquet club, handicaps range from -2 to +26; the better the player the lower the handicap.
+&nbsp;
+// Input
+// Input will consist of a list of lists containing two items each. Each list contains information for a single potential member. 
+//Information consists of an integer for the person's age and an integer for the person's handicap.
+&nbsp;
+// Note for F#: The input will be of (int list list) which is a List&lt;List&gt;
+&nbsp;
+// Example Input
+// [[18, 20],[45, 2],[61, 12],[37, 6],[21, 21],[78, 9]]
+// Output
+// Output will consist of a list of string values (in Haskell: Open or Senior) stating whether the respective member is to be placed in the senior or open category.
+&nbsp;
+// Example Output
+// ["Open", "Open", "Senior", "Open", "Open", "Senior"]
+&nbsp;
+function openOrSenior(data){
+    let res = [];
+    for (let i = 0; i &lt; data.length; i++) {
+            (data[i][0] &gt;= 55 &amp;&amp; data[i][1] &gt; 7) ? res.push('Senior') : res.push('Open');
     }
-    while (this.progress &gt;= 100) {
-      this.progress -= 100;
-      this.rank + 1 == 0 ? (this.rank += 2) : (this.rank += 1);
-    }
-    if (this.rank &gt;= 8) {
-      this.rank = 8;
-      this.progress = 0;
-    }
-  }
+    return res;
 }
 &nbsp;
-module.exports.User = User;</pre></td></tr></table></pre>
+module.exports = {openOrSenior};</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sat Jul 10 2021 19:21:50 GMT+0200 (Central European Summer Time)
+                at Sat Jul 10 2021 19:26:35 GMT+0200 (Central European Summer Time)
             </div>
         </div>
         <script src="../prettify.js"></script>
