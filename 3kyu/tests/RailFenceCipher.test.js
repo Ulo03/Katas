@@ -1,4 +1,4 @@
-const m = require('./RailFenceCipher');
+const m = require('../RailFenceCipher');
 
 test('encodeRailFenceCipher', () => {
   expect(m.encodeRailFenceCipher('WEAREDISCOVEREDFLEEATONCE', 3)).toBe(

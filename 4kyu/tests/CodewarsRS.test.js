@@ -1,4 +1,4 @@
-const m = require("./CodewarsRS");
+const m = require("../CodewarsRS");
 
 const user = new m.User();
 test('CodewarsRS', () => {

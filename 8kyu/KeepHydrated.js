@@ -1,5 +1,4 @@
 //https://www.codewars.com/kata/582cb0224e56e068d800003c
-import { assertEquals } from '../testing.js';
 
 // Nathan loves cycling.
 // Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
@@ -14,8 +13,4 @@ function litres(time) {
   return Math.floor(time * 0.5);
 }
 
-Deno.test('KeepHydrated', () => {
-  assertEquals(litres(3), 1);
-  assertEquals(litres(6.7), 3);
-  assertEquals(litres(11.8), 5);
-});
+module.exports = { litres };

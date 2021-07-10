@@ -1,4 +1,4 @@
-const m = require("./infixToPostfix");
+const m = require("../infixToPostfix");
 
 test('TestCases 1', () => {
   expect(m.toPostfix("2+7*5")).toBe("275*+");
