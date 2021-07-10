@@ -10,6 +10,4 @@ var coinCombo = (cents) => {
   return res;
 }
 
-coinCombo(1);  //?.$.toString() == "1,0,0,0"
-coinCombo(6);  //?.$.toString() == "1,1,0,0"
-coinCombo(11); //?.$.toString() == "1,0,1,0"
+module.exports = {coinCombo};

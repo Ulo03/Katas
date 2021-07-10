@@ -19,3 +19,5 @@ function sumOrProduct(array, n) {
     const sum = max.map(e => {return x+=e})[max.length-1], prod = min.map(e => {return y*=e})[min.length-1];
     return (sum == prod) ? "same" : (sum > prod) ? "sum" : "product";
 }
+
+module.exports = {sumOrProduct};
