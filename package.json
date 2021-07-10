@@ -4,7 +4,8 @@
   "description": "- [1kyu](#1kyu)\r - [2kyu](#2kyu)\r - [3kyu](#3kyu)\r - [4kyu](#4kyu)\r - [5kyu](#5kyu)\r - [6kyu](#6kyu)\r - [7kyu](#7kyu)\r - [8kyu](#8kyu)",
   "main": "testing.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --config jest.github.js",
+    "test:local": "jest --config jest.local.js"
   },
   "repository": {
     "type": "git",
