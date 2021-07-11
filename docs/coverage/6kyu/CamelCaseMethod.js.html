@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for 7kyu/NumberOfPeopleInTheBus.js</title>
+    <title>Code coverage report for 6kyu/CamelCaseMethod.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,20 +19,20 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">7kyu</a> NumberOfPeopleInTheBus.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">6kyu</a> CamelCaseMethod.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>22/22</span>
+                <span class='fraction'>21/21</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>22/22</span>
+                <span class='fraction'>21/21</span>
             </div>
         
             
@@ -77,8 +77,7 @@
 <a name='L18'></a><a href='#L18'>18</a>
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a>
-<a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L21'></a><a href='#L21'>21</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -88,39 +87,37 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">15x</span>
-<span class="cline-any cline-yes">15x</span>
-<span class="cline-any cline-yes">15x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">// https://www.codewars.com/kata/5648b12ce68d9daa6b000099
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span></td><td class="text"><pre class="prettyprint lang-js">// https://www.codewars.com/kata/587731fda577b3d1b0001196
 &nbsp;
-// There is a bus moving in the city, and it takes and drop some people in each bus stop.
-// You are provided with a list (or array) of integer arrays (or tuples). 
-//Each integer array has two items which represent number of people get into bus (The first item) and number of people get off the bus (The second item) in a bus stop.
-// Your task is to return number of people who are still in the bus after the last bus station (after the last array). 
-//Even though it is the last bus stop, the bus is not empty and some people are still in the bus, and they are probably sleeping there :D
+// Write simple .camelCase method (camel_case function in PHP, CamelCase in C# or camelCase in Java) for strings. 
+//All words must have their first letter capitalized without spaces.
 &nbsp;
-// Take a look on the test cases.
-// Please keep in mind that the test cases ensure that the number of people in the bus is always &gt;= 0. So the return integer can't be negative.
-// The second value in the first integer array is 0, since the bus is empty in the first bus stop.
+// For instance:
+// "hello case".camelCase() =&gt; HelloCase
+// "camel case word".camelCase() =&gt; CamelCaseWord
 &nbsp;
-var number = function(busStops){
-    var people = 0;
-    busStops.forEach(e =&gt; {
-        people += e[0];
-        people -= e[1];
-    });
-    return people;
-}
-&nbsp;
-module.exports = {number};</pre></td></tr></table></pre>
+String.prototype.camelCase=function(){
+    const text = this.valueOf(0);
+    let words = text.split(" ");
+    let res = "";
+    words = words.filter((str) =&gt; { return /\S/.test(str); });
+    if (text == "") { return ""; }
+    for (let i = 0; i &lt; words.length; i++) {
+        words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+        res += words[i];
+    }
+    return res;
+}</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
