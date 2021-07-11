@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for 8kyu/KeepHydrated.js</title>
+    <title>Code coverage report for 7kyu/SNS3.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">8kyu</a> KeepHydrated.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">7kyu</a> SNS3.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -32,7 +32,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
@@ -83,26 +83,26 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">//https://www.codewars.com/kata/582cb0224e56e068d800003c
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">// https://www.codewars.com/kata/5a53a17bfd56cb9c14000003
 &nbsp;
-// Nathan loves cycling.
-// Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
-// You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
+// const disariumNumber = (n) =&gt; {
+//   var nums = n.toString().split("").map(e =&gt; +e), sum=0;
+//   for (let i=0; i &lt; n.toString().length; i++) {
+//     sum += nums[i]**(i+1);
+//   }
+//   return (sum == n) ? "Disarium !!" : "Not !!";
+// }
 &nbsp;
-// For example:
-// time = 3 ----&gt; litres = 1
-// time = 6.7---&gt; litres = 3
-// time = 11.8--&gt; litres = 5
-&nbsp;
-function litres(time) {
-  return Math.floor(time * 0.5);
+const disariumNumber = (n) =&gt; {
+  var sum=0, nums = n.toString().split("").map((e,i) =&gt; { sum += (+e)**(i+1) });
+  return (sum == n) ? "Disarium !!" : "Not !!";
 }
 &nbsp;
-module.exports = { litres };</pre></td></tr></table></pre>
+module.exports = {disariumNumber};</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
