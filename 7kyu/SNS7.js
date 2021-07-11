@@ -10,4 +10,4 @@ const extraPerfect = (n) => {
   return res;
 }
 
-extraPerfect(3).toString(); //?.$==[1,3].toString()
+module.exports = {extraPerfect};

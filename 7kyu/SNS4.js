@@ -10,13 +10,4 @@ const jumpingNumber = (n) => {
   return "Jumping!!";
 }
 
-jumpingNumber(1); //?.$=="Jumping!!"       
-jumpingNumber(7); //?.$=="Jumping!!"       
-jumpingNumber(9); //?.$=="Jumping!!"       
-jumpingNumber(23); //?.$=="Jumping!!"      
-jumpingNumber(32); //?.$=="Jumping!!"      
-jumpingNumber(79); //?.$=="Not!!"          
-jumpingNumber(98); //?.$=="Jumping!!"      
-jumpingNumber(8987); //?.$=="Jumping!!"    
-jumpingNumber(4343456); //?.$=="Jumping!!" 
-jumpingNumber(98789876); //?.$=="Jumping!!"
+module.exports = {jumpingNumber};

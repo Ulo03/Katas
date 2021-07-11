@@ -13,9 +13,4 @@ const disariumNumber = (n) => {
   return (sum == n) ? "Disarium !!" : "Not !!";
 }
 
-
-disariumNumber(89); //?.$=="Disarium !!"  
-disariumNumber(564); //?.$=="Not !!"      
-disariumNumber(1024); //?.$=="Not !!"     
-disariumNumber(135); //?.$=="Disarium !!" 
-disariumNumber(136586); //?.$=="Not !!"   
+module.exports = {disariumNumber};

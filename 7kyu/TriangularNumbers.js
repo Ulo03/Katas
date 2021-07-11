@@ -1,4 +1,3 @@
-import { assertEquals } from '../testing.js';
 // Triangular number is the amount of points that can fill equilateral triangle.
 
 // Example: the number 6 is a triangular number because all sides of a triangle has the same amount of points.
@@ -21,17 +20,4 @@ const isTriangular = (num) => {
   return false;
 };
 
-Deno.test('TriangularNumber', () => {
-  assertEquals(isTriangular(1), true);
-  assertEquals(isTriangular(3), true);
-  assertEquals(isTriangular(6), true);
-  assertEquals(isTriangular(10), true);
-  assertEquals(isTriangular(15), true);
-  assertEquals(isTriangular(21), true);
-  assertEquals(isTriangular(28), true);
-
-  assertEquals(isTriangular(2), false);
-  assertEquals(isTriangular(7), false);
-  assertEquals(isTriangular(14), false);
-  assertEquals(isTriangular(27), false);
-});
+module.exports = {isTriangular};
