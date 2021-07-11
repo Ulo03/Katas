@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for 7kyu/SNS6.js</title>
+    <title>Code coverage report for 8kyu/SimpleFun001.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,20 +19,20 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">7kyu</a> SNS6.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">8kyu</a> SimpleFun001.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>7/7</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>3/3</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>7/7</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -63,19 +63,22 @@
 <a name='L4'></a><a href='#L4'>4</a>
 <a name='L5'></a><a href='#L5'>5</a>
 <a name='L6'></a><a href='#L6'>6</a>
-<a name='L7'></a><a href='#L7'>7</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">// https://www.codewars.com/kata/5a58d889880385c2f40000aa
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">// https://www.codewars.com/kata/588417e576933b0ec9000045
 &nbsp;
-const automorphic = (n) =&gt; {
-  return ((n**2).toString()).endsWith(n.toString()) ? "Automorphic" : "Not!!";
+const seatsInTheater = (nCols, nRows, col, row) =&gt; {
+    if (nCols &lt; 1 || nRows &lt; 1 || col &gt; nCols || row &gt; nRows) return 0;
+    return ((nCols-(col-1)) * (nRows-row));
 }
 &nbsp;
-module.exports = {automorphic};</pre></td></tr></table></pre>
+module.exports = {seatsInTheater};</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
