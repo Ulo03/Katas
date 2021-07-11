@@ -12,5 +12,4 @@ function count (string) {
     return res;
 }
 
-console.log(count("aba"), { a: 2, b: 1 }); 
-console.log(count(""), {});    
+module.exports = {count};

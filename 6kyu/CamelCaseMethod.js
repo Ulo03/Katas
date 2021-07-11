@@ -9,8 +9,8 @@
 
 String.prototype.camelCase=function(){
     const text = this.valueOf(0);
-    var words = text.split(" ");
-    var res = "";
+    let words = text.split(" ");
+    let res = "";
     words = words.filter((str) => { return /\S/.test(str); });
     if (text == "") { return ""; }
     for (let i = 0; i < words.length; i++) {
@@ -19,9 +19,3 @@ String.prototype.camelCase=function(){
     }
     return res;
 }
-
-console.log("test case".camelCase() == "TestCase");
-console.log("camel case method".camelCase() == "CamelCaseMethod");
-console.log("say hello ".camelCase() == "SayHello");
-console.log(" camel case word".camelCase() == "CamelCaseWord");
-console.log("".camelCase() == "");
