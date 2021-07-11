@@ -95,6 +95,10 @@
 - [CoinCombination](https://github.com/Ulo03/Katas/blob/master/7kyu/CoinCombination.js)
 - [LargerProductOrSum](https://github.com/Ulo03/Katas/blob/master/7kyu/LargerProductOrSum.js)
 - [NumberOfPeopleInTheBus](https://github.com/Ulo03/Katas/blob/master/7kyu/NumberOfPeopleInTheBus.js)
+- [ShortestWord](https://github.com/Ulo03/Katas/blob/master/7kyu/ShortestWord.js)
+- [SimpleFun002](https://github.com/Ulo03/Katas/blob/master/7kyu/SimpleFun002.js)
+- [SimpleFun003](https://github.com/Ulo03/Katas/blob/master/7kyu/SimpleFun003.js)
+- [SimpleStringMatching](https://github.com/Ulo03/Katas/blob/master/7kyu/SimpleStringMatching.js)
 - [SNS1](https://github.com/Ulo03/Katas/blob/master/7kyu/SNS1.js)
 - [SNS2](https://github.com/Ulo03/Katas/blob/master/7kyu/SNS2.js)
 - [SNS3](https://github.com/Ulo03/Katas/blob/master/7kyu/SNS3.js)
@@ -102,8 +106,7 @@
 - [SNS5](https://github.com/Ulo03/Katas/blob/master/7kyu/SNS5.js)
 - [SNS6](https://github.com/Ulo03/Katas/blob/master/7kyu/SNS6.js)
 - [SNS7](https://github.com/Ulo03/Katas/blob/master/7kyu/SNS7.js)
-- [ShortestWord](https://github.com/Ulo03/Katas/blob/master/7kyu/ShortestWord.js)
-- [SimpleStringMatching](https://github.com/Ulo03/Katas/blob/master/7kyu/SimpleStringMatching.js)
+- [TriangularNumbers](https://github.com/Ulo03/Katas/blob/master/7kyu/TriangularNumbers.js)
 
 <span id="8kyu"></span>
 
@@ -112,3 +115,4 @@
 - [GravityFlip](https://github.com/Ulo03/Katas/blob/master/8kyu/GravityFlip.js)
 - [KeepHydrated](https://github.com/Ulo03/Katas/blob/master/8kyu/KeepHydrated.js)
 - [ReturnNegative](https://github.com/Ulo03/Katas/blob/master/8kyu/ReturnNegative.js)
+- [SimpleFun001](https://github.com/Ulo03/Katas/blob/master/8kyu/SimpleFun001.js)
