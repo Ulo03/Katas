@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for 7kyu/NumberOfPeopleInTheBus.js</title>
+    <title>Code coverage report for 7kyu/ShortestWord.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">7kyu</a> NumberOfPeopleInTheBus.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">7kyu</a> ShortestWord.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>22/22</span>
+                <span class='fraction'>10/10</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>22/22</span>
+                <span class='fraction'>10/10</span>
             </div>
         
             
@@ -66,61 +66,25 @@
 <a name='L7'></a><a href='#L7'>7</a>
 <a name='L8'></a><a href='#L8'>8</a>
 <a name='L9'></a><a href='#L9'>9</a>
-<a name='L10'></a><a href='#L10'>10</a>
-<a name='L11'></a><a href='#L11'>11</a>
-<a name='L12'></a><a href='#L12'>12</a>
-<a name='L13'></a><a href='#L13'>13</a>
-<a name='L14'></a><a href='#L14'>14</a>
-<a name='L15'></a><a href='#L15'>15</a>
-<a name='L16'></a><a href='#L16'>16</a>
-<a name='L17'></a><a href='#L17'>17</a>
-<a name='L18'></a><a href='#L18'>18</a>
-<a name='L19'></a><a href='#L19'>19</a>
-<a name='L20'></a><a href='#L20'>20</a>
-<a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L10'></a><a href='#L10'>10</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">15x</span>
-<span class="cline-any cline-yes">15x</span>
-<span class="cline-any cline-yes">15x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">// https://www.codewars.com/kata/5648b12ce68d9daa6b000099
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">// https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9
 &nbsp;
-// There is a bus moving in the city, and it takes and drop some people in each bus stop.
-// You are provided with a list (or array) of integer arrays (or tuples). 
-//Each integer array has two items which represent number of people get into bus (The first item) and number of people get off the bus (The second item) in a bus stop.
-// Your task is to return number of people who are still in the bus after the last bus station (after the last array). 
-//Even though it is the last bus stop, the bus is not empty and some people are still in the bus, and they are probably sleeping there :D
+//Simple, given a string of words, return the length of the shortest word(s).
+//String will never be empty and you do not need to account for different data types.
 &nbsp;
-// Take a look on the test cases.
-// Please keep in mind that the test cases ensure that the number of people in the bus is always &gt;= 0. So the return integer can't be negative.
-// The second value in the first integer array is 0, since the bus is empty in the first bus stop.
-&nbsp;
-var number = function(busStops){
-    var people = 0;
-    busStops.forEach(e =&gt; {
-        people += e[0];
-        people -= e[1];
-    });
-    return people;
+function findShort(s){
+    return Math.min.apply(Math, s.split(" ").map(e =&gt; e.length));
 }
 &nbsp;
-module.exports = {number};</pre></td></tr></table></pre>
+module.exports = {findShort};</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
