@@ -16,14 +16,4 @@ const balancedNum = (num) => {
   }
 }
 
-balancedNum(7);   //?.$=="Balanced"     
-balancedNum(959); //?.$=="Balanced"     
-balancedNum(13);  //?.$=="Balanced"     
-balancedNum(432); //?.$=="Not Balanced" 
-balancedNum(424); //?.$=="Balanced"     
-
-balancedNum(1024);    //?.$=="Not Balanced" 
-balancedNum(66545);   //?.$=="Not Balanced" 
-balancedNum(295591);  //?.$=="Not Balanced" 
-balancedNum(1230987); //?.$=="Not Balanced" 
-balancedNum(56239814);//?.$=="Balanced"     
+module.exports = {balancedNum};

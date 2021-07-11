@@ -16,9 +16,4 @@ Number.prototype.factorial = function() {
   return sum;
 }
 
-strong(1); //?.$=="STRONG!!!!"     
-strong(2); //?.$=="STRONG!!!!"     
-strong(145); //?.$=="STRONG!!!!"   
-strong(7); //?.$=="Not Strong !!"  
-strong(93); //?.$=="Not Strong !!" 
-strong(185); //?.$=="Not Strong !!"
+module.exports = {strong};
