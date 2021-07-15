@@ -98,6 +98,7 @@
 - [ShortestWord](https://github.com/Ulo03/Katas/blob/master/7kyu/ShortestWord.js)
 - [SimpleFun002](https://github.com/Ulo03/Katas/blob/master/7kyu/SimpleFun002.js)
 - [SimpleFun003](https://github.com/Ulo03/Katas/blob/master/7kyu/SimpleFun003.js)
+- [SimpleFun004](https://github.com/Ulo03/Katas/blob/master/7kyu/SimpleFun004.js)
 - [SimpleStringMatching](https://github.com/Ulo03/Katas/blob/master/7kyu/SimpleStringMatching.js)
 - [SNS1](https://github.com/Ulo03/Katas/blob/master/7kyu/SNS1.js)
 - [SNS2](https://github.com/Ulo03/Katas/blob/master/7kyu/SNS2.js)
