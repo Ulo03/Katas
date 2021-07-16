@@ -1,5 +1,5 @@
 //https://www.codewars.com/kata/58e24788e24ddee28e000053/train/javascript
-import { assertEquals } from '../testing.js';
+import {assertEquals} from '../testing.js';
 
 function simple_assembler(program) {
   var res = {};
@@ -36,10 +36,10 @@ Deno.test('simpleAssembler', () => {
       'jnz a -1',
       'inc a',
     ]),
-    { a: 1 }
+    {a: 1}
   );
   assertEquals(
     simple_assembler(['mov a -10', 'mov b a', 'inc a', 'dec b', 'jnz a -2']),
-    { a: 0, b: -20 }
+    {a: 0, b: -20}
   );
 });

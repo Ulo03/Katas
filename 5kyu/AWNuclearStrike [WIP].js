@@ -1,4 +1,4 @@
-import { assertEquals } from '../testing.js';
+import {assertEquals} from '../testing.js';
 // Write a function that accepts battlefield string and returns letters that survived the nuclear strike.
 
 // The battlefield string consists of only small letters, #,[ and ].

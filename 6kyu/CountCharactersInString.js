@@ -4,12 +4,12 @@
 //If you have a string like aba, then the result should be {'a': 2, 'b': 1}.
 // What if the string is empty? Then the result should be empty object literal, {}.
 
-function count (string) {
-    var res = {};
-    string.split("").map(e => {
-        res[e] ? res[e]++ : res[e] = 1;
-    });
-    return res;
+function count(string) {
+  var res = {};
+  string.split("").map(e => {
+    res[e] ? res[e]++ : res[e] = 1;
+  });
+  return res;
 }
 
 module.exports = {count};

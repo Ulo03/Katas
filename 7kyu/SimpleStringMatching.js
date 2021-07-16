@@ -14,7 +14,7 @@
 // solve("*", "codewars") = true
 
 function solve(a, b) {
-    return new RegExp(`^${a.replace('*','.*')}$`).test(b);
+  return new RegExp(`^${a.replace('*','.*')}$`).test(b);
 }
 
 module.exports = {solve};

@@ -18,7 +18,9 @@ test('CodewarsRS ... OK', () => {
 });
 
 test('CodewarsRS ... BAD', () => {
-  expect(() => {user.incProgress(-10)}).toThrow('ERROR');
+  expect(() => {
+    user.incProgress(-10)
+  }).toThrow('ERROR');
 });
 
 test('CodewarsRS ... MAX', () => {

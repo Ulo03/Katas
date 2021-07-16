@@ -8,6 +8,10 @@ test('TestCases ... OK', () => {
 });
 
 test('TestCases ... BAD', () => {
-  expect(() => {m.toPostfix("25_2")}).toThrow("INVALID TOKEN");
-  expect(() => {m.toPostfix("((25)*3")}).toThrow("MMP");
+  expect(() => {
+    m.toPostfix("25_2")
+  }).toThrow("INVALID TOKEN");
+  expect(() => {
+    m.toPostfix("((25)*3")
+  }).toThrow("MMP");
 });

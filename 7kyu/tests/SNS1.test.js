@@ -1,19 +1,19 @@
 const m = require('../SNS1');
 
 test('X < 1000', () => {
-    expect(m.balancedNum(7)).toStrictEqual("Balanced");
-    expect(m.balancedNum(959)).toStrictEqual("Balanced");
-    expect(m.balancedNum(13)).toStrictEqual("Balanced");
-    expect(m.balancedNum(432)).toStrictEqual("Not Balanced");
-    expect(m.balancedNum(424)).toStrictEqual("Balanced");
+  expect(m.balancedNum(7)).toStrictEqual("Balanced");
+  expect(m.balancedNum(959)).toStrictEqual("Balanced");
+  expect(m.balancedNum(13)).toStrictEqual("Balanced");
+  expect(m.balancedNum(432)).toStrictEqual("Not Balanced");
+  expect(m.balancedNum(424)).toStrictEqual("Balanced");
 });
 
 test('X > 1000', () => {
-    expect(m.balancedNum(1024)).toStrictEqual("Not Balanced");
-    expect(m.balancedNum(66545)).toStrictEqual("Not Balanced");
-    expect(m.balancedNum(295591)).toStrictEqual("Not Balanced");
-    expect(m.balancedNum(1230987)).toStrictEqual("Not Balanced");
-    expect(m.balancedNum(56239814)).toStrictEqual("Balanced");
+  expect(m.balancedNum(1024)).toStrictEqual("Not Balanced");
+  expect(m.balancedNum(66545)).toStrictEqual("Not Balanced");
+  expect(m.balancedNum(295591)).toStrictEqual("Not Balanced");
+  expect(m.balancedNum(1230987)).toStrictEqual("Not Balanced");
+  expect(m.balancedNum(56239814)).toStrictEqual("Balanced");
 });
 
 /*

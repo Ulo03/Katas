@@ -4,9 +4,9 @@
 // The example above would return:
 // "exampleexample"
 
-function removeParentheses(s){
-    return s.replace(/\(.*\)|\[.*\]|\{.*\}/g, "");
+function removeParentheses(s) {
+  return s.replace(/\(.*\)|\[.*\]|\{.*\}/g, "");
 }
 
-console.log(removeParentheses("foo(test(string))bar") == "foobar"       );
-console.log(removeParentheses("te[s]st_str(i)in{gg}g") == "test_string" );
+console.log(removeParentheses("foo(test(string))bar") == "foobar");
+console.log(removeParentheses("te[s]st_str(i)in{gg}g") == "test_string");

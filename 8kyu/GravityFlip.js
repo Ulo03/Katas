@@ -3,11 +3,11 @@
 const flip = (d, a) => {
   return d == 'R'
     ? a.sort((a, b) => {
-        return a - b;
-      })
+      return a - b;
+    })
     : a.sort((a, b) => {
-        return b - a;
-      });
+      return b - a;
+    });
 };
 
-module.exports = { flip };
+module.exports = {flip};

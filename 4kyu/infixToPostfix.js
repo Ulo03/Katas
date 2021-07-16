@@ -1,4 +1,4 @@
-function toPostfix (infix) {
+function toPostfix(infix) {
   let out = "", ops = [], inp = infix.split("");
   let opp = {'+': 1, '-': 1, '*': 2, '/': 2, '^': 3, '(': 4, ')': 4};
   while (inp.length > 0) {
@@ -7,7 +7,7 @@ function toPostfix (infix) {
       out += tk;
     } else if (tk.match(/[+|\-|*|/|^]/)) {
       if (ops.length > 0) {
-        while (ops[ops.length-1] !== '(' && (getAssoc(tk) === "lr" && opp[tk] <= opp[ops[ops.length-1]]) || (getAssoc(tk) === "rl" && opp[tk] < opp[ops[ops.length-1]])) {
+        while (ops[ops.length - 1] !== '(' && (getAssoc(tk) === "lr" && opp[tk] <= opp[ops[ops.length - 1]]) || (getAssoc(tk) === "rl" && opp[tk] < opp[ops[ops.length - 1]])) {
           out += ops.pop();
         }
       }
@@ -15,7 +15,7 @@ function toPostfix (infix) {
     } else if (tk === "(") {
       ops.push(tk);
     } else if (tk === ")") {
-      while (ops[ops.length-1] !== '(' && ops.length > 0) {
+      while (ops[ops.length - 1] !== '(' && ops.length > 0) {
         out += ops.pop();
       }
       ops.pop();
@@ -24,7 +24,7 @@ function toPostfix (infix) {
     }
   }
   while (ops.length > 0) {
-    if (ops[ops.length-1] === "(") throw new Error("MMP");
+    if (ops[ops.length - 1] === "(") throw new Error("MMP");
     out += ops.pop();
   }
   return out;
@@ -38,4 +38,4 @@ function getAssoc(op) {
   }
 }
 
-module.exports = { toPostfix };
+module.exports = {toPostfix};

@@ -13,25 +13,25 @@
 // [3,2,6,6],[-7,2,2,8] --> [-3,9,6,2] # 3266 + (-7228) = -3962
 
 function addArrays(array1, array2) {
-    if (array1.length <= 0) return array2;
-    if (array2.length <= 0) return array1;
-    let arrayToNumber1 = parseInt(array1.join(''));
-    let arrayToNumber2 = parseInt(array2.join(''));
-    let res = (arrayToNumber1 + arrayToNumber2).toString().split("").map(Number);
-    if (arrayToNumber1 + arrayToNumber2 < 0) {
-        res.shift();
-        res[0] = parseInt((arrayToNumber1 + arrayToNumber2).toString().substr(0,2));
-    }
-    return res;
+  if (array1.length <= 0) return array2;
+  if (array2.length <= 0) return array1;
+  let arrayToNumber1 = parseInt(array1.join(''));
+  let arrayToNumber2 = parseInt(array2.join(''));
+  let res = (arrayToNumber1 + arrayToNumber2).toString().split("").map(Number);
+  if (arrayToNumber1 + arrayToNumber2 < 0) {
+    res.shift();
+    res[0] = parseInt((arrayToNumber1 + arrayToNumber2).toString().substr(0, 2));
+  }
+  return res;
 }
 
 function addArrays2(array1, array2) {
-    if (array1.length <= 0) return array2;
-    if (array2.length <= 0) return array1;
-    let arrayToNumber1 = parseInt(array1.join(''));
-    let arrayToNumber2 = parseInt(array2.join(''));
-    return String(arrayToNumber1 + arrayToNumber2).match(/-?[0-9]/g).map(Number);
+  if (array1.length <= 0) return array2;
+  if (array2.length <= 0) return array1;
+  let arrayToNumber1 = parseInt(array1.join(''));
+  let arrayToNumber2 = parseInt(array2.join(''));
+  return String(arrayToNumber1 + arrayToNumber2).match(/-?[0-9]/g).map(Number);
 }
 
-console.log(addArrays([1,2,3], [4,5,6]));
-console.log(addArrays2([1,2,3], [4,5,6]));
+console.log(addArrays([1, 2, 3], [4, 5, 6]));
+console.log(addArrays2([1, 2, 3], [4, 5, 6]));

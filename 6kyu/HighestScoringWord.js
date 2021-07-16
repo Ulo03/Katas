@@ -6,40 +6,40 @@
 // If two words score the same, return the word that appears earliest in the original string.
 // All letters will be lowercase and all inputs will be valid.
 
-function high(x){
-    var scores = new Map();
-    var score = 1;
-    var history = [];
-    for (let i = 97; i <= 122; i++) {
-        scores.set(String.fromCharCode(i), score);
-        score++;
-    }
-    x.split(' ').map(e => {
-        score = 0;
-        e.split('').map(l => {
-            score += scores.get(l);
-        });
-        history.push(score);
+function high(x) {
+  var scores = new Map();
+  var score = 1;
+  var history = [];
+  for (let i = 97; i <= 122; i++) {
+    scores.set(String.fromCharCode(i), score);
+    score++;
+  }
+  x.split(' ').map(e => {
+    score = 0;
+    e.split('').map(l => {
+      score += scores.get(l);
     });
-    const max = indexOfMax(history);
-    return x.split(' ')[max];
+    history.push(score);
+  });
+  const max = indexOfMax(history);
+  return x.split(' ')[max];
 }
 
 function indexOfMax(arr) {
-    if (arr.length === 0) {
-        return -1;
+  if (arr.length === 0) {
+    return -1;
+  }
+  var max = arr[0];
+  var maxIndex = 0;
+  for (var i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      maxIndex = i;
+      max = arr[i];
     }
-    var max = arr[0];
-    var maxIndex = 0;
-    for (var i = 1; i < arr.length; i++) {
-        if (arr[i] > max) {
-            maxIndex = i;
-            max = arr[i];
-        }
-    }
-    return maxIndex;
+  }
+  return maxIndex;
 }
 
 console.log(high('man i need a taxi up to ubud') == 'taxi');
-console.log(high('what time are we climbing up the volcano') == 'volcano'); 
+console.log(high('what time are we climbing up the volcano') == 'volcano');
 console.log(high('take me to semynak') == 'semynak');  

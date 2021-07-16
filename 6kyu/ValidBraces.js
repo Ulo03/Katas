@@ -17,27 +17,27 @@
 // "[(])"     =>  False
 // "[({})](]" =>  False
 
-function validBraces(braces){
-    var matches = { '(':')', '{':'}', '[':']' };
-    var stack = [];
-    var currentChar;
+function validBraces(braces) {
+  var matches = {'(': ')', '{': '}', '[': ']'};
+  var stack = [];
+  var currentChar;
 
-    for (var i=0; i<braces.length; i++) {
-      currentChar = braces[i];
-      if (matches[currentChar]) {
-        stack.push(currentChar);
-      } else {
-        if (currentChar !== matches[stack.pop()]) {
-          return false;
-        }
+  for (var i = 0; i < braces.length; i++) {
+    currentChar = braces[i];
+    if (matches[currentChar]) {
+      stack.push(currentChar);
+    } else {
+      if (currentChar !== matches[stack.pop()]) {
+        return false;
       }
     }
-
-    return stack.length === 0;
   }
 
-console.log(validBraces( "()" ), true);
-console.log(validBraces( "[(])" ), false);
-console.log(validBraces( "(()())))" ), false);
-console.log(validBraces( "(()())()))" ), false);
-console.log(validBraces( "(((())))" ), true);
+  return stack.length === 0;
+}
+
+console.log(validBraces("()"), true);
+console.log(validBraces("[(])"), false);
+console.log(validBraces("(()())))"), false);
+console.log(validBraces("(()())()))"), false);
+console.log(validBraces("(((())))"), true);

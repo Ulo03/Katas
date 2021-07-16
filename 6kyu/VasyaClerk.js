@@ -14,45 +14,45 @@
 // tickets([25, 100]) // => NO. Vasya will not have enough money to give change to 100 dollars
 // tickets([25, 25, 50, 50, 100]) // => NO. Vasya will not have the right bills to give 75 dollars of change (you can't make two bills of 25 from one of 50)
 
-function tickets(pil){
-    var change = new Map();
-    var ok = true;
-    change.set("25", 0);
-    change.set("50", 0);
-    change.set("100", 0);
-    
-    pil.forEach(e => {
-        if (change.get("25") >= 0 && change.get("50") >= 0 && change.get("100") >= 0) {
-            if (e == 25) {
-                change.set("25", change.get("25")+1);
-            } else if (e == 50) {
-                if (change.get("25") > 0) {
-                    change.set("25", change.get("25")-1);
-                    change.set("50", change.get("50")+1);
-                } else {
-                   ok = false;
-                }
-            } else if (e == 100) {
-                if (change.get("50") > 0 && change.get("25") > 0) {
-                    change.set("50", change.get("50")-1);
-                    change.set("25", change.get("25")-1);
-                    change.set("100", change.get("100")+1);
-                } else if (change.get("25") >= 3) {
-                    change.set("25", change.get("25")-3);
-                    change.set("100", change.get("100")+1);
-                } else {
-                   ok = false;
-                }
-            }
+function tickets(pil) {
+  var change = new Map();
+  var ok = true;
+  change.set("25", 0);
+  change.set("50", 0);
+  change.set("100", 0);
+
+  pil.forEach(e => {
+    if (change.get("25") >= 0 && change.get("50") >= 0 && change.get("100") >= 0) {
+      if (e == 25) {
+        change.set("25", change.get("25") + 1);
+      } else if (e == 50) {
+        if (change.get("25") > 0) {
+          change.set("25", change.get("25") - 1);
+          change.set("50", change.get("50") + 1);
         } else {
-           ok = false;
+          ok = false;
         }
-    });
-    if (ok) {
-        return "YES";
+      } else if (e == 100) {
+        if (change.get("50") > 0 && change.get("25") > 0) {
+          change.set("50", change.get("50") - 1);
+          change.set("25", change.get("25") - 1);
+          change.set("100", change.get("100") + 1);
+        } else if (change.get("25") >= 3) {
+          change.set("25", change.get("25") - 3);
+          change.set("100", change.get("100") + 1);
+        } else {
+          ok = false;
+        }
+      }
     } else {
-        return "NO";
+      ok = false;
     }
+  });
+  if (ok) {
+    return "YES";
+  } else {
+    return "NO";
+  }
 }
 
 console.log(tickets([25, 25, 50]) == "YES");

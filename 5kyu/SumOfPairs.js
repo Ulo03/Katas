@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/54d81488b981293527000c8f
-import { assertEquals } from '../testing.js';
+import {assertEquals} from '../testing.js';
 
 function sum_pairs(ints, s) {
   for (let i = 0; i < ints.length; i++) {

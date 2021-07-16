@@ -1,6 +1,7 @@
 // https://www.codewars.com/kata/51b66044bce5799a7f000003
 
 const RM = new RomanNumerals();
+
 function RomanNumerals() {
   const torom = new Map([
     [1, 'I'],

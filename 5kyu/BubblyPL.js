@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/5f7a715f6c1f810017c3eb07
-import { assertEquals } from '../testing.js';
+import {assertEquals} from '../testing.js';
 
 const start = (c) => c([]),
   end = ([x]) => x,

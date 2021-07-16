@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/5267faf57526ea542e0007fb
-import { assertEquals } from '../testing.js';
+import {assertEquals} from '../testing.js';
 
 let MyMath = {
   round: function (x) {

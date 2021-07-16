@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/515bb423de843ea99400000a
-import { assertEquals } from '../testing.js';
+import {assertEquals} from '../testing.js';
 
 function PaginationHelper(collection, itemsPerPage) {
   this.items = collection.length;

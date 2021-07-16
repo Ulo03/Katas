@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/52449b062fb80683ec000024
-import { assertEquals } from '../testing.js';
+import {assertEquals} from '../testing.js';
 
 function generateHashtag(str) {
   return str.match(/\w/g) && str.camelCase().length < 140

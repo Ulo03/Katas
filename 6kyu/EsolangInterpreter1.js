@@ -3,13 +3,16 @@
 const myFirstInterpreter = (code) => {
   var mc = 0, res = "", code = code.split("");
   for (let x of code) {
-    if (x == "+") { mc = mc.inc() } else
-    if (x == ".") { res += String.fromCharCode(mc)}
+    if (x == "+") {
+      mc = mc.inc()
+    } else if (x == ".") {
+      res += String.fromCharCode(mc)
+    }
   }
   return res;
 }
 
-Number.prototype.inc = function() {
+Number.prototype.inc = function () {
   if (this.valueOf() >= 255) {
     return 0;
   } else {

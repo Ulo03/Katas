@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/520b9d2ad5c005041100000f
-import { assertEquals } from '../testing.js';
+import {assertEquals} from '../testing.js';
 
 function pigIt(str) {
   var res = [];

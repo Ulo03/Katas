@@ -2,8 +2,8 @@
 
 const jumpingNumber = (n) => {
   var x = n.toString();
-  for (let i=0; i<x.length-1; i++) {
-    if(x[i]-x[i+1] != 1 && x[i+1]-x[i] != 1) {
+  for (let i = 0; i < x.length - 1; i++) {
+    if (x[i] - x[i + 1] != 1 && x[i + 1] - x[i] != 1) {
       return "Not!!";
     }
   }

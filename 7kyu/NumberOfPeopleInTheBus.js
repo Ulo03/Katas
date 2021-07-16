@@ -10,13 +10,13 @@
 // Please keep in mind that the test cases ensure that the number of people in the bus is always >= 0. So the return integer can't be negative.
 // The second value in the first integer array is 0, since the bus is empty in the first bus stop.
 
-var number = function(busStops){
-    var people = 0;
-    busStops.forEach(e => {
-        people += e[0];
-        people -= e[1];
-    });
-    return people;
+var number = function (busStops) {
+  var people = 0;
+  busStops.forEach(e => {
+    people += e[0];
+    people -= e[1];
+  });
+  return people;
 }
 
 module.exports = {number};

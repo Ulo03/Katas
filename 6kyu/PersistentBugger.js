@@ -4,7 +4,7 @@ const persistence = (n) => {
   if (n.toString().length <= 1) return 0;
   let c = 0;
   while (n.toString().length > 1) {
-    n = n.toString().split("").map(e => +e).reduce((a,b) => a*b);
+    n = n.toString().split("").map(e => +e).reduce((a, b) => a * b);
     c++;
   }
   return c;

@@ -14,10 +14,18 @@
 // The product of the 3 lowest numbers is higher than the sum of the 3 highest numbers so the function returns "product"
 
 function sumOrProduct(array, n) {
-    var min = array.sort((a,b)=>{return a-b;}).slice(0,n), max = array.sort((a,b)=>{return b-a;}).slice(0,n);
-    var x = 0, y = 1;
-    const sum = max.map(e => {return x+=e})[max.length-1], prod = min.map(e => {return y*=e})[min.length-1];
-    return (sum == prod) ? "same" : (sum > prod) ? "sum" : "product";
+  var min = array.sort((a, b) => {
+    return a - b;
+  }).slice(0, n), max = array.sort((a, b) => {
+    return b - a;
+  }).slice(0, n);
+  var x = 0, y = 1;
+  const sum = max.map(e => {
+    return x += e
+  })[max.length - 1], prod = min.map(e => {
+    return y *= e
+  })[min.length - 1];
+  return (sum == prod) ? "same" : (sum > prod) ? "sum" : "product";
 }
 
 module.exports = {sumOrProduct};

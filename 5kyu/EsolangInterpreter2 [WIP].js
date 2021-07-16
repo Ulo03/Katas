@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/58678d29dbca9a68d80000d7
-import { assertEquals } from '../testing.js';
+import {assertEquals} from '../testing.js';
 
 const interpreter = (code, tape) => {
   var pt = 0,

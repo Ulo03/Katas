@@ -8,24 +8,28 @@
 // uniqueInOrder('ABBCcAD')         == ['A', 'B', 'C', 'c', 'A', 'D']
 // uniqueInOrder([1,2,2,3,3])       == [1,2,3]
 
-var uniqueInOrder = function(iterable){
-    var res = [];
-    var values = [];
-    var last = "";
-    if (typeof iterable == typeof '') { values = iterable.split(''); } else { values = iterable }
-    values.map(current => {
-        if (last != "") {
-            if (current != last) {
-                res.push(current);
-            }
-        } else {
-            res.push(current);
-        }
-        last = current;
-    });
-    return res;
+var uniqueInOrder = function (iterable) {
+  var res = [];
+  var values = [];
+  var last = "";
+  if (typeof iterable == typeof '') {
+    values = iterable.split('');
+  } else {
+    values = iterable
+  }
+  values.map(current => {
+    if (last != "") {
+      if (current != last) {
+        res.push(current);
+      }
+    } else {
+      res.push(current);
+    }
+    last = current;
+  });
+  return res;
 }
 
-console.log(uniqueInOrder('AAAABBBCCDAABBB') == ['A','B','C','D','A','B']);
+console.log(uniqueInOrder('AAAABBBCCDAABBB') == ['A', 'B', 'C', 'D', 'A', 'B']);
 console.log(uniqueInOrder('ABBCcAD') == ['A', 'B', 'C', 'c', 'A', 'D']);
-console.log(uniqueInOrder([1,2,2,3,3]) == [1,2,3]);
+console.log(uniqueInOrder([1, 2, 2, 3, 3]) == [1, 2, 3]);

@@ -1,11 +1,11 @@
 // https://www.codewars.com/kata/55c45be3b2079eccff00010f
 
-function order(words){
+function order(words) {
   if (!words) return "";
   let res = new Array(words.split(" ").length).fill(0);
   for (let w of words.split(" ")) {
     let w2 = parseInt(w.replace(/[a-zA-Z]/g, ""));
-    res[w2-1] = w;
+    res[w2 - 1] = w;
   }
   return res.join(" ");
 }

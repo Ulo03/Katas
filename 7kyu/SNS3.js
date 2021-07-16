@@ -9,7 +9,9 @@
 // }
 
 const disariumNumber = (n) => {
-  var sum=0, nums = n.toString().split("").map((e,i) => { sum += (+e)**(i+1) });
+  var sum = 0, nums = n.toString().split("").map((e, i) => {
+    sum += (+e) ** (i + 1)
+  });
   return (sum == n) ? "Disarium !!" : "Not !!";
 }
 

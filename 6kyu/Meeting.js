@@ -10,7 +10,9 @@
 // It can happen that in two distinct families with the same family name two people have the same first name too.
 
 const meetings = (s) => {
-  s = s.split("").map(e => e.toUpperCase()).join("").split(";").map(e => {return "("+e+")"}).join(";").replace(/:/g, ", ");
+  s = s.split("").map(e => e.toUpperCase()).join("").split(";").map(e => {
+    return "(" + e + ")"
+  }).join(";").replace(/:/g, ", ");
   return s.split(";").sort().join("");
 }
 

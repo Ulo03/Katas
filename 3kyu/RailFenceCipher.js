@@ -79,4 +79,4 @@ function decodeRailFenceCipher(string, numRails) {
   return res;
 }
 
-module.exports = { decodeRailFenceCipher, encodeRailFenceCipher };
+module.exports = {decodeRailFenceCipher, encodeRailFenceCipher};

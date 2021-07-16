@@ -7,15 +7,19 @@
 // "hello case".camelCase() => HelloCase
 // "camel case word".camelCase() => CamelCaseWord
 
-String.prototype.camelCase=function(){
-    const text = this.valueOf(0);
-    let words = text.split(" ");
-    let res = "";
-    words = words.filter((str) => { return /\S/.test(str); });
-    if (text == "") { return ""; }
-    for (let i = 0; i < words.length; i++) {
-        words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
-        res += words[i];
-    }
-    return res;
+String.prototype.camelCase = function () {
+  const text = this.valueOf(0);
+  let words = text.split(" ");
+  let res = "";
+  words = words.filter((str) => {
+    return /\S/.test(str);
+  });
+  if (text == "") {
+    return "";
+  }
+  for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    res += words[i];
+  }
+  return res;
 }
